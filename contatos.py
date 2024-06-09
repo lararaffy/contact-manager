@@ -1,6 +1,12 @@
-def add_contato(contatos, nome, telefone):
-    contatos[nome] = {'telefone': telefone}
-    return contatos
+contatos = []
+
+def add_contato(nome, telefone):
+    nome = str(input("Digite seu nome:  "))
+    telefone = input("Digite o número: ")
+    novo_contato ={ "Nome": nome, "Telefone": telefone, }
+    contatos.append(novo_contato)
+    print("Contato adicionado com sucesso!")
+
 
 def remover_contato(contatos, nome):
     if nome in contatos:
