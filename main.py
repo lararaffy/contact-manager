@@ -23,5 +23,5 @@ def menu():
          print("Opção inválida. TENTE NOVAMENTE!")
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     menu()
